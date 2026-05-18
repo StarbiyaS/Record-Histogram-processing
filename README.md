@@ -1,4 +1,4 @@
-# EXP-3-Record-Histogram-processing
+
 ## Aim
 
 To write a Python program using OpenCV to perform histogram equalization on both grayscale and color images to enhance image contrast and brightness.
@@ -90,7 +90,9 @@ plt.show()
 ```
 ## Output
 
-![alt text](image-1.png)
+<img width="400" height="548" alt="image" src="https://github.com/user-attachments/assets/f933b018-bf54-4211-a0e6-1a9c302fb552" />
+
+
 
 ```
 plt.hist(img.ravel(),256,range = [0, 256]);
@@ -99,7 +101,8 @@ plt.show()
 ```
 ## Output
 
-![alt text](image-2.png)
+<img width="780" height="566" alt="image" src="https://github.com/user-attachments/assets/a7a5cae2-2d88-4871-a78c-182256df4754" />
+
 
 ```
 img_eq = cv2.equalizeHist(img)
@@ -108,7 +111,8 @@ plt.title('Equalized Histogram')
 ```
 ## Output
 
-![alt text](image-3.png)
+<img width="753" height="591" alt="image" src="https://github.com/user-attachments/assets/7a24327b-4b91-4aca-9d57-faf7896f79e8" />
+
 
 ```
 plt.imshow(img_eq, cmap='gray')
@@ -117,7 +121,7 @@ plt.show()
 ```
 ## Output
 
-![alt text](image-4.png)
+<img width="470" height="570" alt="image" src="https://github.com/user-attachments/assets/03733266-c306-4a06-ae23-94e1217de307" />
 
 ## Histogram Equalization for Color Images
 
@@ -130,14 +134,15 @@ img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
 ```
 ## Output
 
-![alt text](image-5.png)
+<img width="406" height="545" alt="image" src="https://github.com/user-attachments/assets/243065cf-e27d-4895-adaf-014f2ca32341" />
+
 
 ```
 plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Histogram Equalized');plt.show()
 ```
 ## Output
 
-![alt text](image-6.png)
+<img width="792" height="566" alt="image" src="https://github.com/user-attachments/assets/26ea9830-8850-406d-8ead-6d9e7baca539" />
 
 ```
 plt.figure(figsize = (20,10))
@@ -147,7 +152,8 @@ plt.show()
 ```
 ## Output
 
-![alt text](image-7.png)
+<img width="1367" height="512" alt="image" src="https://github.com/user-attachments/assets/0cf1188c-ffe2-47b3-a0cb-63aad1b06e7a" />
+
 
 ```
 plt.figure(figsize = [15,4])
@@ -157,7 +163,8 @@ plt.subplot(122); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 
 ## Output
 
-![alt text](image-8.png)
+<img width="1377" height="443" alt="image" src="https://github.com/user-attachments/assets/06edeeef-1ab3-49cb-bea8-6178c1e28537" />
+
 
 ### Grayscale Histogram Equalization
 
